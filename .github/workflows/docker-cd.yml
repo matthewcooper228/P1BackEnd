@@ -35,7 +35,7 @@ jobs:
         # The json string that can be a secret of the github repo or a string of a json. | "{"title": "my json"}" 
         json: ${{secrets.APPSETTINGS}}
         # Optional subfolder directory to save the json file. | src/ 
-        dir: # ./WebAPI
+        dir: ./WebAPI
         
     - name: Build and push Docker images
       # You may pin to the exact commit or the version.
